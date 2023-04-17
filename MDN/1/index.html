@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button onclick="alerclick()">Bruno Create</button>
+     <!-- Ao clicar no botao voce ira ativar a funcao do arquivo script -->
+<script href="./script.js">
+
+</script>    
+    <script>
+        // o codigo fica aqui
+
+        function createParagraph() {
+            let para = document.createElement('p');
+            para.textContent = 'Você clicou no botão!';
+            document.body.appendChild(para);
+          }
+          
+          const buttons = document.querySelectorAll('button');
+          
+          for(let i = 0; i < buttons.length ; i++) {
+            buttons[i].addEventListener('click', createParagraph);
+          }
+          
+          
+    </script>
+
+
+</body>
+</html>
