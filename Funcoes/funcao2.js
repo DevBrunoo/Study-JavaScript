@@ -7,3 +7,14 @@ function parimpa(n){
 }
 
 console.log(parimpa(2))
+
+
+function sequenciaFibonaci(h){
+    if(h%2 * h) {
+        return 'True!'
+    } else {
+        return 'False!'
+    }
+}
+
+console.log(fibonaci(2))
